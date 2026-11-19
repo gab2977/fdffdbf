@@ -1,0 +1,144 @@
+/* =========================================
+   Configurações Gerais e Variáveis
+   ========================================= */
+:root {
+    --cor-primaria: #1e293b;
+    --cor-secundaria: #2563eb;
+    --cor-fundo: #f8fafc;
+    --cor-branco: #ffffff;
+    --cor-texto: #334155;
+    --cor-borda: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* Classe utilitária para centralizar conteúdo */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =========================================
+   Cabeçalho e Navegação
+   ========================================= */
+.cabecalho-principal {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    padding: 20px 0;
+}
+
+.cabecalho-principal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.titulo-projeto {
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+}
+
+.menu-navegacao ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-navegacao a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu-navegacao a:hover {
+    color: #93c5fd;
+}
+
+/* =========================================
+   Seções Principais
+   ========================================= */
+.conteudo-principal section {
+    padding: 50px 0;
+}
+
+.conteudo-principal h2 {
+    color: var(--cor-primaria);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--cor-secundaria);
+    padding-left: 12px;
+}
+
+/* Seção Sobre */
+.secao-sobre {
+    background-color: var(--cor-branco);
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.secao-sobre p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Seção Tecnologias (Cards) */
+.grade-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card-tecnologia {
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.card-tecnologia:hover {
+    transform: translateY(-4px);
+}
+
+.card-tecnologia h3 {
+    color: var(--cor-secundaria);
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+/* =========================================
+   Rodapé
+   ========================================= */
+.rodape-principal {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 20px;
+}
+
+.rodape-principal .copyright {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 8px;
+}
